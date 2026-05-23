@@ -17,13 +17,21 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>aprendendo a usar <strong>DOM</strong> em javaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName("p")[1]
-        window.document.write("Está escrito assim " + p1.innerText)
+        /*window.document.write("Está escrito assim " + p1.innerText)
+        /*var d = window.document.getElementById("msg")
+        d.style.backgroundColor = "green"
+        d.innerText = "Estou aguardando..."*/
+        /*var d = window.document.getElementsByName('msg')[0]
+        d.innerText="olá"*/
+        d = window.document.querySelector("div#msg")
+        d.style.color = "blue"
+        d.style.background = "red"
         p1.style.color="Blue"
-        corpo.style.backgroundColor="black"
+        corpo.style.background="black"
         window.document.write(p1.innerHTML)
     </script>
 </body>
